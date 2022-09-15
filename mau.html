@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OPP</title>
+    <script src="Animals.js"></script>
+    <script src="Cat.js"></script>
+</head>
+<body>
+<script>
+// <!--<canvas id="myCanvas" width="800" height="500" style="border: 10px solid green"></canvas>-->
+<!--&lt;!&ndash;<script>-->
+<!--    let canvas = document.getElementById('myCanvas');-->
+<!--    let ctx = canvas.getContext('2d');-->
+// <!--    //Ve hinh tron,-->
+<!--    ctx.beginPath();-->
+<!--    ctx.strokeStyle = 'blue'-->
+<!--    ctx.fillStyle = 'blue'-->
+<!--    ctx.arc(400,250,100,0,2*Math.PI,true)-->
+<!--    ctx.fill()-->
+<!--    ctx.stroke()-->
+<!--    ctx.closePath()-->
+// <!--    //Ve hinh vuong-->
+<!--    ctx.beginPath()-->
+<!--    ctx.strokeRect(0,250,200,100)-->
+<!--    ctx.closePath()-->
+
+<!--    ctx.fillRect(0,0,200,100)-->
+<!--    ctx.closePath()-->
+
+// <!--    //Ve Text-->
+<!--    ctx.beginPath()-->
+<!--    ctx.font = '50px Arial Black'-->
+<!--    ctx.fillStyle = 'red'-->
+<!--    ctx.fillText('JAV082022', 480,50)-->
+<!--    ctx.fill()-->
+<!--    ctx.closePath()-->
+// <!--    //Ve Image-->
+
+<!--    let image = new Image()-->
+<!--    image.src = 'image/download.jfif'-->
+<!--    image.onload = drawImage;-->
+<!--    function drawImage() {-->
+<!--        ctx.drawImage(this,700,400,100,100)-->
+<!--    }-->
+
+
+        class Students {
+            id;
+            name;
+            age;
+            address;
+
+            constructor(id, name, age, address) {
+                this.id = id;
+                this.name = name;
+                this.age = age;
+                this.address = address;
+            }
+
+            //Ham setter la ham khong tra ve - Nhiem vu: set lai thong tin, set lai thuoc tinh cua Object
+            setId(id) {
+                this.id = id;
+            }
+            //Ham getter la ham co du lieu tra ve- Ham dung de lay thong tin cua Object
+            getId() {
+                return this.id
+            }
+            setName(name) {
+                this.name = name;
+            }
+            getName() {
+                return this.name;
+            }
+            setAge(age) {
+                this.age = age;
+            }
+            getAge() {
+                return this.age;
+            }
+            setAddress(address) {
+                this.address = address;
+            }
+            getAddress() {
+                return this.address;
+            }
+        }
+    //Khoi tao doi tuong cua class students
+        let student1 = new Students(1,'Quyen',18,'Hn')
+        console.log('student1 name ==========>',student1)
+    let animal1 = new Animals(1,'Cat','White')
+        console.log(animal1)
+        let cat1 = new Cat(1,'Jerry','White')
+</script>
+</body>
+</html>
+</body>
+</html>
